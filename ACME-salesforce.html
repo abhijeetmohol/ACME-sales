@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			ACME sales
+		</title>
+		<link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/sale-and-discount/32/Sale_and_Discount-13-64.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				background-color:#000;
+				font-family: 'Open Sans', sans-serif;
+			}
+			.flex{
+				display:flex;
+			}
+			.justify-content{
+				justify-content:space-between;
+			}
+			.width{
+				width:1024px;
+				margin:0px auto 15px;
+			}
+			.wrapper{
+				width:1048px;
+				background-color:#fff;
+				margin:150px auto;
+				padding:15px 0px 1px 0px;
+				font-size:13px;
+				flex-wrap:wrap;
+				justify-content:space-between;
+			}
+			.main-container{
+				padding:20px 0px;
+				background-color:#1b4f8b;
+				width:1024px;
+				margin:0px auto 15px;
+				flex-wrap:wrap;
+				border-radius:10px;
+				color:#fff;
+			}
+			.container-1{
+				width:35%;
+				display:flex;
+				align-items:center;
+			}
+			.inner-text-1{
+				min-width:500px;
+				padding-left:25px;
+				font-weight:600;
+			}
+			.container-2{
+				width:30%;
+			}
+			.text-middle{
+				border-left:2px solid #fff;
+				border-right:2px solid #fff;
+				display:flex;
+				justify-content:space-around;
+			}
+			.deal{
+				line-height:20px;
+				text-align:center;
+			}
+			.container-3{
+				width:35%;
+			}
+			.deal-index-btn-primary{
+				width:140px;
+				color:#000;
+				background-color:#abfee0;
+				margin:0px auto;
+				padding:10px 0px;
+				text-align:center;
+				border-radius:10px;
+				cursor:pointer;
+			}
+			.deal-index-btn-secondary{
+				width:140px;
+				color:black;
+				background-color:#ffc5c7;
+				margin:0px auto;
+				padding:10px 0px;
+				text-align:center;
+				border-radius:10px;
+				cursor:pointer;
+			}
+			.deal-index-btn-tershary{
+				width:138px;
+				color:black;
+				background-color:#ffdebf;
+				margin:0px auto;
+				padding:10px 7px;
+				text-align:center;
+				border-radius:10px;
+				cursor:pointer;
+			}
+			.number{
+				font-size:15px;
+				color:#000;
+			}
+			.inner-btn{
+				padding:3px; 
+				background-color:#fff;
+				font-size:12px;
+				font-weight:700;
+				color:#439a92;
+				border-radius:20px;
+			}
+			
+			.main-container-2{
+				background-color:#e5e5e5;
+				padding:20px 0px;
+				width:1024px;
+				margin:0px auto 15px;
+				display:flex;
+				flex-wrap:wrap;
+				border-radius:10px;
+				color:#000;
+			}
+			
+			.main-container-3-1st{
+				background-color:#e5e5e5;
+				padding:10px 0px;
+				width:49.2%;
+				display:flex;
+				flex-wrap:wrap;
+				border-radius:10px;
+				color:#000;
+			}
+			.main-container-3-1st .container-2{
+				width:66%;
+				padding-top:10px;
+			}
+			.main-container-3-1st .container-3{
+				width:10%;
+			}
+			.main-container-3-1st .text-middle{
+				border:none;
+			}
+			.main-container-4-1st{
+				background-color:#e5e5e5;
+				padding:10px 0px;
+				width:32.2%;
+				display:flex;
+				justify-content:space-around;
+				flex-wrap:wrap;
+				border-radius:10px;
+				color:#000;
+			}
+			.main-container-4-1st .text-middle{
+				border:none;
+				min-width:300px;
+			}
+			.main-container-4-1st .container-1{
+				width:150px;
+				order:1;
+			}
+			.main-container-4-1st .inner-text-1{
+				padding:0px;
+				padding-top:10px;
+				min-width:151px;
+				padding-left:15px;
+			}
+			.main-container-4-1st .container-2{
+				width:100%;
+				padding-top:25px;
+				padding-bottom:10px;
+				order:3;
+			}
+			.main-container-4-1st .container-3{
+				order: 2;
+				width:140px;
+			}
+			.deal-index-btn-secondary .inner-btn{
+				padding:3px; 
+				background-color:#fff;
+				font-size:12px;
+				font-weight:700;
+				color:#d3818f;
+				border-radius:20px;
+			}
+			.deal-index-btn-tershary .inner-btn{
+				padding:3px; 
+				background-color:#fff;
+				font-size:8px;
+				font-weight:700;
+				color:#dc985b;
+				border-radius:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper ">
+			<div class="main-container flex">
+				<div class="container-1">
+					<p class="inner-text-1">ACME Salesforce CPQ Implementation</p>
+				</div>
+				<div class="container-2">
+					<div class="text-middle">
+						<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+						<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+						<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+					</div>
+				</div>
+				<div class="container-3">
+						<div class="deal-index-btn-primary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">High</span> </div>
+				</div>
+			</div>
+		<!--2nd-content-start-->
+			<div class="main-container-2">
+				<div class="container-1">
+					<p class="inner-text-1">ACME Salesforce CPQ Implementation</p>
+				</div>
+				<div class="container-2">
+					<div class="text-middle">
+						<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+						<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+						<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+					</div>
+				</div>
+				<div class="container-3">
+						<div class="deal-index-btn-secondary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">Low</span> </div>
+				</div>
+			</div>
+		<!--2nd-content-end-->
+			<!--3rd-content-start-->
+			<div class="width flex justify-content">
+				<div class="main-container-3-1st">
+					<div class="container-1">
+						<p class="inner-text-1">ACME Salesforce CPQ Implementation</p>
+					</div>
+					<div class="container-2">
+						<div class="text-middle">
+							<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+							<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+							<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+						</div>
+					</div>
+					<div class="container-3">
+						<div class="deal-index-btn-primary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">High</span> </div>
+					</div>
+				</div>
+			<!--3rd-content-end-->
+			<!--3rd-2nd-content-start-->
+				<div class="main-container-3-1st">
+					<div class="container-1">
+						<p class="inner-text-1">ACME Salesforce CPQ Implementation</p>
+					</div>
+					<div class="container-2">
+						<div class="text-middle">
+							<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+							<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+							<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+						</div>
+					</div>
+					<div class="container-3">
+							<div class="deal-index-btn-tershary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">Medium</span> </div>
+					</div>
+				</div>
+			<!--3rd-2nd-content-end-->
+		</div>
+		<div class="width flex justify-content">
+			<!--4th-1st-content-start-->
+				<div class="main-container-4-1st">
+					<div class="container-1">
+						<p class="inner-text-1">ACME Salesforce CPQ... </p>
+					</div>
+					<div class="container-2">
+						<div class="text-middle">
+							<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+							<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+							<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+						</div>
+					</div>
+					<div class="container-3">
+							<div class="deal-index-btn-primary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">High</span> </div>
+					</div>
+				</div>
+			<!--4th-1st-content-end-->
+			<!--4th-2nd-content-start-->
+				<div class="main-container-4-1st">
+					<div class="container-1">
+						<p class="inner-text-1">ACME Salesforce CPQ... </p>
+					</div>
+					<div class="container-2">
+						<div class="text-middle">
+							<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+							<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+							<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+						</div>
+					</div>
+					<div class="container-3">
+							<div class="deal-index-btn-tershary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">Medium</span> </div>
+					</div>
+				</div>
+			<!--4th-2nd-content-end-->
+			<!--4th-3rd-content-start-->
+				<div class="main-container-4-1st">
+					<div class="container-1">
+						<p class="inner-text-1">ACME Salesforce CPQ... </p>
+					</div>
+					<div class="container-2">
+						<div class="text-middle">
+							<div class="deal"> <p>Deal Type </p><h4>Fixed Bid</h4></div>
+							<div class="deal"> <p>Deal Duration</p> <h4>18 Months</h4></div>
+							<div class="deal"> <p>Location </p> <h4>Multiple</h4></div>
+						</div>
+					</div>
+					<div class="container-3">
+							<div class="deal-index-btn-secondary">Deal-Index: <strong class="number">86</strong>&nbsp;&nbsp;<span class="inner-btn">Low</span> </div>
+					</div>
+				</div>
+			<!--4th-3rd-content-end-->
+			</div>
+		</div>
+	</body>
+</html>
